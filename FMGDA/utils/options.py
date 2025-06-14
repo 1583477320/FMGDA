@@ -9,13 +9,13 @@ from optim.client_optim import METHODS
 def args_parser():
     parser = argparse.ArgumentParser()
     # federated arguments
-    parser.add_argument('--local_epochs', type=int, default=5, help="rounds of local training epochs")
-    parser.add_argument('--global_epochs', type=int, default=40, help="rounds of global training epochs")
-    parser.add_argument('--num_clients', type=int, default=5, help="number of client: K")
+    parser.add_argument('--local_epochs', type=int, default=10, help="rounds of local training epochs")
+    parser.add_argument('--global_epochs', type=int, default=100, help="rounds of global training epochs")
+    parser.add_argument('--num_clients', type=int, default=10, help="number of client: K")
     parser.add_argument('--num_tasks', type=int, default=2, help="number of task: i")
     parser.add_argument('--batch_size', type=int, default=256, help="batch size: [a,b]")
-    parser.add_argument('--local_lr', type=float, default=0.01, help="local_learning rate")
-    parser.add_argument('--global_lr', type=float, default=0.01, help="global_learning rate")
+    parser.add_argument('--local_lr', type=float, default=0.1, help="local_learning rate")
+    parser.add_argument('--global_lr', type=float, default=0.1, help="global_learning rate")
     parser.add_argument('--beta', type=float, default=0.5, help="FMGDA_S beta (default: 0.5)")
     parser.add_argument("--method", type=str, default="fmgda_s",choices=list(METHODS.keys()), help="MTL weight method")
 
