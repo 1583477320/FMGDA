@@ -7,3 +7,12 @@ if __name__ == "__main__":
     args = args_parser()
     args.method = 'fmgda'
 ```
+
+## 实验记录
+1. 先注册一个swanlab账号，官网https://swanlab.cn
+2. 加入团队zhaoFMOO
+3. 运行前先在终端输入
+   ```
+   swanlab log
+   ```
+   然后输入在设置找到的api key再运行代码
