@@ -1,0 +1,17 @@
+Index: FMGDA/test.py
+===================================================================
+diff --git a/FMGDA/test.py b/FMGDA/test.py
+deleted file mode 100644
+--- a/FMGDA/test.py	(revision b41595c6b5582973ce9f73c13f166417029f685f)
++++ /dev/null	(revision b41595c6b5582973ce9f73c13f166417029f685f)
+@@ -1,7 +0,0 @@
+-from utils.options import args_parser
+-
+-args = args_parser()
+-print(args.method)
+-
+-args.method = 'fm'
+-print(args.method)
+\ No newline at end of file
+diff --git a/FMGDA/11.py b/FMGDA/11.py
+deleted file mode 100644
