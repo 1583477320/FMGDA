@@ -187,7 +187,7 @@ if __name__ == "__main__":
         # 设置项目名
         project="FMGDA",
         # 设置实验名称
-        experiment_name=f"{args.method}-{args.batch_size}",
+        experiment_name=f"{args.method}_{args.batch_size}",
         # 设置超参数
         config={
             "global_lr": args.global_lr,
