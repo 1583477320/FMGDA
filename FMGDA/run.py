@@ -182,10 +182,12 @@ if __name__ == "__main__":
 
     # 创建一个SwanLab项目
     swanlab.init(
+        # 设置团队名
+        workspace="zhaoFMOO",
         # 设置项目名
         project="FMGDA",
         # 设置实验名称
-        experiment_name=f"{args.method}",
+        experiment_name=f"{args.method}-{args.batch_size}",
         # 设置超参数
         config={
             "global_lr": args.global_lr,
